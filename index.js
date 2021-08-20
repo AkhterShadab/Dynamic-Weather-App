@@ -19,7 +19,7 @@ const server=http.createServer((req,res)=>
 {
     if(req.url=="/")
     {
-        requests('https://api.openweathermap.org/data/2.5/weather?q=Dhampur&units=metric&appid=05d378fd2c8b7e3173609ffb75b0c7c6')
+        requests('https://api.openweathermap.org/data/2.5/weather?q=Dhampur&units=metric&appid=77adbf1fa360cb87dc9f62d5ada48b46')
         .on('data', function (chunk) {
            const arrData=[JSON.parse(chunk)];
            const realTimeData = arrData
